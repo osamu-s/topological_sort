@@ -5,7 +5,6 @@ edge = [ {1, 3},
          {},
          {2} ]
 
-
 def inverse(e):
     inv_e = [set() for i in e]
     for i, a in enumerate(e):
@@ -15,9 +14,9 @@ def inverse(e):
 
 
 def khan(e):
+    l = list()
     inv_e = inverse(e)
     s = [ i for i, n in enumerate(inv_e) if len(n) == 0 ]
-    l = list()
 
     while len(s) > 0:
         n = s.pop()
